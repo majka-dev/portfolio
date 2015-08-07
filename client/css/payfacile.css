@@ -1,0 +1,99 @@
+body {
+    font-family: 'Acto-UltraLight',sans-serif;
+    color: #37474f;
+    font-size: 16px;
+    background-color: #fbe9e7;
+}
+
+@font-face {
+    font-family: "Acto-UltraLight";
+    src: url("/Fonts/Acto/Acto-UltraLight.otf");
+}
+
+.row {
+    margin-bottom: 0px;
+}
+
+.resumediv {
+    width: 100%;
+    height: 100%;
+
+}
+
+.materialboxed {
+        float: left;
+        margin: 1.5%;
+
+}
+
+#contactForm {
+    background-color: beige;
+}
+
+.skillsimg {
+    height: 80px;
+    margin: 30px;
+    }
+.list {
+    align-content: center;
+}
+.two, .three, .four, .five {
+    min-height: 200px;
+    border:solid #fbe9e7;
+
+}
+.two {
+    background-color: #3498db;
+}
+.three {
+    background-image: url("/img/keynote_animation_material_design.gif");
+    background-size: contain;
+
+}
+
+.four {
+    background-image: url("/img/Material_Design_Wallpaper_WALLPAPERDNA (55).png");
+    background-size: contain;
+}
+
+.five {
+    background-color: darkseagreen;
+}
+
+li {
+    display: inline-block;
+}
+.text {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.text .content {
+    display: inline;
+}
+.text .dash {
+    display: inline-block;
+    height: 3px;
+    width: 20px;
+    background-color: #3498db;
+    animation: blink .5s infinite linear;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
