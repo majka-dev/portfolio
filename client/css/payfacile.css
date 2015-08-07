@@ -19,13 +19,19 @@ body {
     height: 100%;
 
 }
-
-.materialboxed {
-        float: left;
-        margin: 1.5%;
-
+.lo {
+    margin: 3%;
+}
+.contactme {
+    background-image: url("/img/to (44).jpg");
+    background-size: cover;
+    color: #fbe9e7;
 }
 
+.brand-logo {
+    background-image: url("/img/to (11).png");
+    background-size: cover;
+}
 #contactForm {
     background-color: beige;
 }
