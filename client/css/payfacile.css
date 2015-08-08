@@ -1,7 +1,5 @@
 body {
     font-family: 'Acto-UltraLight',sans-serif;
-    color: #37474f;
-    font-size: 16px;
     background-color: #fbe9e7;
 }
 
@@ -10,39 +8,60 @@ body {
     src: url("/Fonts/Acto/Acto-UltraLight.otf");
 }
 
-.row {
-    margin-bottom: 0px;
+a {
+    text-decoration: none;
 }
 
-.resumediv {
-    width: 100%;
-    height: 100%;
-
+a.nav-wrapper:hover, a:active, a:visited {
+    background-color: #ea454b;
+    text-decoration: none;
+    color: inherit;
 }
+
+.side-nav {
+    width: auto;
+    color: dimgrey;
+    will-change: left;
+}
+
+
+/*
 .lo {
     margin: 3%;
-}
-.contactme {
+}.contactme {
     background-image: url("/img/to (44).jpg");
     background-size: cover;
     color: #fbe9e7;
-}
+}*/
 
 .brand-logo {
-    background-image: url("/img/to (11).png");
-    background-size: cover;
+    background-image: url("/img/peacockLogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
 #contactForm {
-    background-color: beige;
+    background-color: #eeeeee;
 }
 
 .skillsimg {
-    height: 80px;
-    margin: 30px;
-    }
-.list {
-    align-content: center;
+    height: 70px;
+    margin: 40px;
 }
+
+.skills {
+    display: inline-block;
+}
+.list {
+    height: 100%;
+}
+
+fieldset {
+    border: none;
+}
+
+
+
 .two, .three, .four, .five {
     min-height: 200px;
     border:solid #fbe9e7;
@@ -54,7 +73,6 @@ body {
 .three {
     background-image: url("/img/keynote_animation_material_design.gif");
     background-size: contain;
-
 }
 
 .four {
@@ -66,9 +84,10 @@ body {
     background-color: darkseagreen;
 }
 
-li {
+.lil {
     display: inline-block;
 }
+
 .text {
     width: 100%;
     text-align: center;
@@ -101,5 +120,98 @@ li {
     100% {
         opacity: 1;
     }
+}
+
+/*NAV BUTTON*/
+.fond {
+    position: absolute;
+    padding-top: 85px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3b50ce;
+}
+
+.contener {
+    width: 50px;
+    height: 41px;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.contener:hover {
+    -webkit-transition: all 0.4s linear;
+    -webkit-transform: rotate(360deg);
+    -moz-transition: all 0.4s linear;
+    -moz-transform: rotate(360deg);
+    -ms-transition: all 0.4s linear;
+    -ms-transform: rotate(360deg);
+    transition: all 0.4s linear;
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.contener .menu1 {
+    width: 50px;
+    height: 7px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.contener:hover .menu1 {
+    -webkit-transition: all 0.4s linear;
+    -webkit-transform: rotate(-45deg);
+    -moz-transition: all 0.4s linear;
+    -moz-transform: rotate(-45deg);
+    -ms-transition: all 0.4s linear;
+    -ms-transform: rotate(-45deg);
+    transition: all 0.4s linear;
+    transform: rotate(-45deg);
+    width: 30px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.contener .menu2 {
+    width: 50px;
+    height: 7px;
+    background-color: #ffffff;
+}
+
+.contener:hover .menu2 {
+    border-radius: 5px;
+}
+
+.contener .menu3 {
+    width: 50px;
+    height: 7px;
+    background-color: #ffffff;
+    margin-top: 10px;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.contener:hover .menu3 {
+    -webkit-transition: all 0.4s linear;
+    -webkit-transform: rotate(45deg);
+    -moz-transition: all 0.4s linear;
+    -moz-transform: rotate(45deg);
+    -ms-transition: all 0.4s linear;
+    -ms-transform: rotate(45deg);
+    transition: all 0.4s linear;
+    transform: rotate(45deg);
+    width: 30px;
+    margin-right: 20px;
+    margin-top: 5px;
 }
 
