@@ -3,6 +3,18 @@ body {
     background-color: #fbe9e7;
 }
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    }
+main {
+    flex: 1 0 auto;
+}
+
+footer.page-footer {
+       background-color: dimgrey;
+}
 @font-face {
     font-family: "Acto-UltraLight";
     src: url("/Fonts/Acto/Acto-UltraLight.otf");
@@ -12,8 +24,8 @@ a {
     text-decoration: none;
 }
 
-a.nav-wrapper:hover, a:active, a:visited {
-    background-color: #ea454b;
+a:hover, a:active, a:visited {
+    background-color: #4dd0e1 ;
     text-decoration: none;
     color: inherit;
 }
@@ -26,6 +38,7 @@ a.nav-wrapper:hover, a:active, a:visited {
 
 
 /*
+#ea454b;
 .lo {
     margin: 3%;
 }.contactme {
@@ -64,24 +77,22 @@ fieldset {
 
 .two, .three, .four, .five {
     min-height: 200px;
-    border:solid #fbe9e7;
+    margin: 2%;
 
 }
-.two {
-    background-color: #3498db;
-}
+
 .three {
-    background-image: url("/img/keynote_animation_material_design.gif");
-    background-size: contain;
+    background-image: url("/img/majka2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .four {
-    background-image: url("/img/Material_Design_Wallpaper_WALLPAPERDNA (55).png");
-    background-size: contain;
-}
-
-.five {
-    background-color: darkseagreen;
+    background-image: url("/img/keynote_animation_material_design.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .lil {
@@ -142,7 +153,7 @@ fieldset {
     transition: all 0.4s linear;
 }
 
-.contener:hover {
+.contener:active {
     -webkit-transition: all 0.4s linear;
     -webkit-transform: rotate(360deg);
     -moz-transition: all 0.4s linear;
@@ -214,4 +225,40 @@ fieldset {
     margin-right: 20px;
     margin-top: 5px;
 }
+/*hamburger*/
 
+#nav-toggle { position: absolute; left: 50%; top: 50%; }
+
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background-color: #3b50ce;
+    position: absolute;
+    display: block;
+    content: '';
+}
+#nav-toggle span:before {
+    top: -10px;
+}
+#nav-toggle span:after {
+    bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+    background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0;
+}
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}

@@ -1,15 +1,11 @@
 <template name="header">
+    <div class="navbar-fixed">
     <nav>
-        <div class="nav-wrapper">
-            <a href="/" class="brand-logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MariWeb&nbsp;&nbsp;</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse">
-                <div class="bla" align="center" style="padding:7px;">
-                <div class="contener">
-                    <div class="menu1">&nbsp;</div>
-                    <div class="menu2">&nbsp;</div>
-                    <div class="menu3">&nbsp;</div>
-                </div>
-            </div></a>
+        <div class="nav-wrapper blue-grey darken-2">
+            <a href="/" class="brand-logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MarWeb&nbsp;&nbsp;</a>
+            <a href="#" id="nav-toggle" data-activates="mobile-demo" class="button-collapse">
+                <span></span>
+            </a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="aboutme" class="aboutme">About me</a></li>
                 <li><a class="resume" href="/resume">Resume</a></li>
@@ -24,4 +20,5 @@
             </ul>
         </div>
     </nav>
+    </div>
 </template>
