@@ -1,11 +1,17 @@
 <template name="aboutme">
     <div class="row">
         <div class="col two s12 m12 l7 z-depth-2 light-blue lighten-4">
-            <h2>MARIA NEMCOVA </h2>
-            My name is Maria Nemcova, I come from Slovakia and I am currently living in Paris.
-            I want to succeed in a stimulating and challenging
-            environment that will provide me with advancement opportunities.
+               <h4>MARIA NEMCOVA</h4>
+
+                I'm a UX/UI Designer and Front End Developer from Slovakia,
+                currently living in Paris. I enjoy turning complex problems into simple,
+                beautiful and intuitive interface designs.
+            <!--I want to succeed in a stimulating and challenging
+            environment that will provide me with advancement opportunities.-->
+
         </div>
+       <!-- <div class="col one s12 m12 l3 z-depth-2">
+        </div>-->
 
         <div class="col three s12 m12 l4 z-depth-2">
         </div>
@@ -15,8 +21,35 @@
         <div class="col four s12 m12 l3 z-depth-2">
 
         </div>
-        <div class="col five s12 m12 l8 z-depth-2 light-blue lighten-3">
-            MY SKILLS and KNOWLEDGE <br>
+        <div class="col five s12 m12 l4 z-depth-2 teal lighten-4">
+            <ul class="list" data-collapsible="accordion" id="staggered-test">
+                <li><h5>Designer</h5></li>
+                <li>User Interface Design</li>
+                <li>User Experience Design</li>
+                <li>Interaction Design</li>
+                <li>Website Design</li>
+                <li>Branding / Logo Design</li>
+            </ul>
+        </div>
+
+        <div class="col five s12 m12 l4 z-depth-2 light-blue lighten-3">
+            <ul class="list" data-collapsible="accordion" id="staggered-test">
+                <li><h5>Developer</h5></li>
+                <li>Front End Development</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript, jQuery</li>
+                <li>Meteor, Mongo DB</li>
+                <li>Wordpress, My SQL</li>
+                <li>Git / GitHub</li>
+            </ul>
+        </div>
+    </div>
+<hr>
+    {{>myskills}}
+<hr>
+    {{>resume}}
+    <!--
             HTML5, CSS3, JavaScript, JQuery,<br>
             Meteor, Mongo DB, Iron router,<br>
             Web design (Material design, Polymer) / UX,<br>
@@ -25,10 +58,8 @@
             Version control (Git / GitHub),<br>
             Cross-browser compatibility,<br>
             Responsive web design,…
-        </div>
-    </div>
 
-    <!--<div align="center" style="background-color: #3b50ce; padding-top:50px; padding-bottom:50px;">
+            <div align="center" style="background-color: #3b50ce; padding-top:50px; padding-bottom:50px;">
        <div class="contener">
            <div class="menu1">&nbsp;</div>
            <div class="menu2">&nbsp;</div>
