@@ -24,6 +24,7 @@ Template.header.events({
 });
 
 //Chart skills
+
 Template.myskills.onRendered(function() {
     $('.chart').easyPieChart({
         scaleColor: "#ecf0f1",
@@ -36,6 +37,7 @@ Template.myskills.onRendered(function() {
     });
 });
 
+/*share*/
 ShareIt.configure({
     useFB: true,          // boolean (default: true)
                           // Whether to show the Facebook button
@@ -43,13 +45,73 @@ ShareIt.configure({
                           // Whether to show the Twitter button
     useGoogle: true,      // boolean (default: true)
                           // Whether to show the Google+ button
-    classes: "share", // string (default: 'large btn')
-                          // The classes that will be placed on the sharing buttons, bootstrap by default.
+    classes: "share",    // string (default: 'large btn')
+    // The classes that will be placed on the sharing buttons, bootstrap by default.
     iconOnly: true,      // boolean (default: false)
-                          // Don't put text on the sharing buttons
+    // Don't put text on the sharing buttons
     applyColors: false     // boolean (default: true)
-                          // apply classes to inherit each social networks background color
+    // apply classes to inherit each social networks background color
 });
+
+/*Scroll to top button*/
+Template.layout.onRendered(function(){
+        $(window).scroll(function(){
+            if ( $(this).scrollTop() >= 500 ) {
+                $(".Top").fadeIn();
+            }
+            else {
+                $(".Top").fadeOut();
+            }
+        });
+        $(".Top").click(function(){
+            $("html,body").stop().animate({scrollTop : 0});
+        });
+    });
+
+
+//this is where we apply opacity to the arrow
+Template.aboutme.onRendered(function() {
+    $(window).scroll(function(){
+
+        //get scroll position
+        var topWindow = $(window).scrollTop();
+        //multipl by 1.5 so the arrow will become transparent half-way up the page
+        var topWindow = topWindow * 1.5;
+
+        //get height of window
+        var windowHeight = $(window).height();
+
+        //set position as percentage of how far the user has scrolled
+        var position = topWindow / windowHeight;
+        //invert the percentage
+        position = 1 - position;
+
+        //define arrow opacity as based on how far up the page the user has scrolled
+        //no scrolling = 1, half-way up the page = 0
+        $('.arrow-wrap').css('opacity', position);
+
+    });
+});
+
+//Code stolen from css-tricks for smooth scrolling:
+Template.aboutme.onRendered(function() {
+$(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+});
+
+
 /*
 
  Template.resume.onRendered(function(){
@@ -59,17 +121,18 @@ ShareIt.configure({
  document.querySelector( "#nav-toggle" )
  .addEventListener( "click", function() {
  this.classList.toggle( "active" );
- });*
+ });
  Template.welcome.onRendered(function () {
  var app;
  $(document).ready(function () {
  return app.init();
  });
  app = {
- text: ' Hi, I am Maria Nemcova, front end web developer & web designer',
+ text: ' <p class="coder">I love coding.</p>',
  index: 0,
  chars: 0,
  speed: 100,
+
  container: '.text .content',
  init: function () {
  this.chars = this.text.length;
@@ -87,3 +150,4 @@ ShareIt.configure({
  };
  }.call(this));
  */
+
