@@ -24,7 +24,6 @@ Template.header.events({
 });
 
 //Chart skills
-
 Template.myskills.onRendered(function() {
     $('.chart').easyPieChart({
         scaleColor: "#ecf0f1",
@@ -33,7 +32,7 @@ Template.myskills.onRendered(function() {
         barColor: '#1abc9c',
         trackColor: "#ecf0f1",
         size: 160,
-        animate: 500
+        animate: 1000
     });
 });
 
@@ -111,43 +110,43 @@ $(function() {
 });
 });
 
+//Writing text
+ Template.welcome.onRendered(function () {
+         var app;
+     Template.welcome.onRendered(function () {
+             return app.init();
+         });
 
-/*
+         app = {
+             text: 'Hello stranger. How are you doing?',
+             index: 0,
+             chars: 0,
+             speed: 100,
+             container: '.text .content',
+             init: function () {
+                 this.chars = this.text.length;
+                 return this.write();
+             },
+             write: function () {
+                 $(this.container).append(this.text[this.index]);
+                 if (this.index < this.chars) {
+                     this.index++;
+                     return window.setTimeout(function () {
+                         return app.write();
+                     }, this.speed);
+                 }
+             }
+         };
+     }.call(this));
 
- Template.resume.onRendered(function(){
+
+/*Template.welcome.onRendered(function(){
  //without $(document).ready
  $(".cv").slideUp();
  });
  document.querySelector( "#nav-toggle" )
  .addEventListener( "click", function() {
  this.classList.toggle( "active" );
- });
- Template.welcome.onRendered(function () {
- var app;
- $(document).ready(function () {
- return app.init();
- });
- app = {
- text: ' <p class="coder">I love coding.</p>',
- index: 0,
- chars: 0,
- speed: 100,
+ });*/
 
- container: '.text .content',
- init: function () {
- this.chars = this.text.length;
- return this.write();
- },
- write: function () {
- $(this.container).append(this.text[this.index]);
- if (this.index < this.chars) {
- this.index++;
- return window.setTimeout(function () {
- return app.write();
- }, this.speed);
- }
- }
- };
- }.call(this));
- */
 
