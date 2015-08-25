@@ -29,7 +29,7 @@ Template.myskills.onRendered(function() {
         scaleColor: "#ecf0f1",
         lineWidth: 20,
         lineCap: 'butt',
-        barColor: '#1abc9c',
+        barColor: '#7092BE',/*#1abc9c*/
         trackColor: "#ecf0f1",
         size: 160,
         animate: 1000
@@ -48,9 +48,30 @@ ShareIt.configure({
     // The classes that will be placed on the sharing buttons, bootstrap by default.
     iconOnly: true,      // boolean (default: false)
     // Don't put text on the sharing buttons
-    applyColors: false     // boolean (default: true)
+    applyColors: false,     // boolean (default: true)
     // apply classes to inherit each social networks background color
+    faSize: '',            // font awesome size
+    faClass: ''       // font awesome classes like square
 });
+
+ShareIt.configure({
+    sites: {                // nested object for extra configurations
+        'facebook': {
+            'appId': null   // use sharer.php when it's null, otherwise use share dialog
+        },
+        'twitter': {},
+        'googleplus': {},
+        'pinterest': {}
+    }
+});
+
+Template.header.helpers({
+    shareData: function() {
+        return {
+            title: this.data,
+            author: Meteor.users.findOne(this.authorId)
+        }
+    }});
 
 /*Scroll to top button*/
 Template.layout.onRendered(function(){
@@ -139,8 +160,68 @@ $(function() {
          };
      }.call(this));
 
+//Galerry fancy
+Template.portfolio.onRendered(function($) {
+    $('.fancybox').fancybox({
+        padding : 0,
+        openEffect  : 'elastic',
+        margin : [20, 60, 20, 60]
+    });
+});
 
-/*Template.welcome.onRendered(function(){
+/*BLOG*/
+if (Meteor.isServer) {
+    Blog.config({
+        adminRole: 'blogAdmin',
+        authorRole: 'blogAuthor'
+    });
+}
+
+if (Meteor.isClient) {
+    Blog.config({
+        comments: {
+            disqusShortname: 'myshortname'
+        }
+    });
+}
+
+if (Meteor.isClient) {
+    Blog.config({
+        comments: {
+            useSideComments: true,
+            allowAnonymous: true
+        }
+    });
+}
+
+if (Meteor.isClient) {
+    Blog.config({
+        blogIndexTemplate: 'myBlogIndexTemplate',
+        blogShowTemplate: 'myShowBlogTemplate'
+    });
+}
+
+if (Meteor.isClient) {
+    Blog.config({
+        blogNotFoundTemplate: 'myNotFoundTemplate'
+    });
+}
+
+/*Animation */
+Template.lulu.onRendered(function(e) {
+    $(".la").animate({
+        left: '250px'
+    });
+});
+/*
+Template.portfolio.onRendered(function() {
+    $(document).delegate('#my-lightbox', 'click', function(event) {
+        event.preventDefault();
+        return $(this).ekkoLightbox();
+    });
+});
+
+Template.welcome.onRendered(function(){
  //without $(document).ready
  $(".cv").slideUp();
  });
