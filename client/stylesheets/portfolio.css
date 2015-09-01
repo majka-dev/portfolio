@@ -21,17 +21,21 @@ main {
 }
 
 .avatar {
-    background-image: url("/img/me/a (20).jpg");
+    background-image: url("/img/to (4).jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 300px;
 }
+.card-reveal {
+    display: block;
+    transform: translateY(-30%) !important;
+}
 
 .vizitka {
     background-image: url("/img/Logo/BUSINESScard2.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    min-height: 450px;
+    min-height: 320px;
     -webkit-animation-name: example; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
     -webkit-animation-iteration-count: 1; /* Chrome, Safari, Opera */
@@ -49,7 +53,7 @@ main {
     animation-duration: 2s;
     animation-iteration-count: 1;
 }
-.container {
+.container, .container-fluid{
     min-height: 100vh;
 }
 footer.page-footer {
@@ -360,6 +364,13 @@ fieldset {
     background-color: lightblue;
     padding-top: 2%;
     padding-bottom: 2%;
+}
+
+.bubuslide {
+    position: relative;
+    height: 100px!important;
+    max-height: 100px !important;
+    width: 100%;
 }
 
 /*tree*/

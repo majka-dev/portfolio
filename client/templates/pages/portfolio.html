@@ -1,237 +1,45 @@
-<!--<template name="portfolio">
-   <h4>My Portfolio</h4>
-    <!--PAYFACILE
-<div class="row">
-    <div class="col s12 m6 l10 offset-l1">
+<template name="portfolio"> <!--xmlns="http://www.w3.org/1999/html-->
+    <div class="container">
+    <div class="account panel panel-info">
+        <h4>My Portfolio</h4>
+        <div id="content blog">
+          {{#each posts}}
+            {{> postItem}}
+          {{/each}}
+        </div>
+    </div>
+        </div>
+</template>
+
+<template name="postItem">
+<div class="col s12 m6 l10 offset-l1" style="margin-bottom: 50px;">
     <div class="card large">
         <div class="card-image waves-effect waves-block waves-light">
-            {{>slider}}
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="{{url1}}">
+                    </li>
+                    <li>
+                        <img src="{{url2}}">
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">PayFacile<i class="fa fa-ellipsis-v right"></i></span>
-            <p>UX/UI Design</p>
-            <p>(meteor/material design)</p>
-            <p><a href="http://www.payfacile.com/" target="_blank">www.payfacile.com</a></p>
+            <span class="card-title activator grey-text text-darken-4">
+              {{title}}
+              <i class="fa fa-ellipsis-v right"></i></span>
+            <p>{{subtitle}}</p>
+            <p>{{subtitle2}}</p>
+            <p><a href="{{url}}" target="_blank">{{url}}</a></p>
         </div>
         <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">PayFacile<i class="fa fa-times right"></i></span>
-            <p>In my last project, I was working for company PayFacile. Helping with UI/UX,
-                creating LogIn/Register form and CheckOut page in meteor using google material design.
-            </p>
-            <img class="materialboxed col l4 m4 s12"  src="./img/Portfolio/to. (8).jpg">
-            <img class="materialboxed col l3 m3 s12" src="./img/Portfolio/to. (3).jpg">
-            <img class="materialboxed col l5 m5 s12" src="./img/Portfolio/to. (4).jpg">
-        </div>
-    </div>
-        <hr>
-    </div>
-
-    <!--Majka's Art
-    <div class="col s12 m6 l10 offset-l1">
-        <div class="card large">
-            <div class="card-image waves-effect waves-block waves-light">
-                {{>slider}}
-            </div>
-            <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Majka's Art<i class="fa fa-ellipsis-v right"></i></span>
-                <p>Portfolio website</p>
-                <p>(PHP / Wordpress)</p>
-                <p><a href="#" target="_blank">view website</a></p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Majka's Art<i class="fa fa-times right"></i></span>
-                <p>I was working for company PayFacile. Helping with UI/UX,
-                creating LogIn/Register form and CheckOut page in meteor using google material design.
-                </p>
-            </div>
-        </div>
-        <hr>
-    </div>
-
-    <!--Hevon
-    <div class="col s12 m6 l10 offset-l1">
-        <div class="card large">
-            <div class="card-image waves-effect waves-block waves-light">
-                {{>slider}}
-                <!--<img class="activator" src="./img/Portfolio/to. (1).jpg">
-            </div>
-            <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Hevon<i class="fa fa-ellipsis-v right"></i></span>
-                <p>Front end dev. UI/UX Design</p>
-                <p>(meteor/bootstrap)</p>
-                <p><a href="#" target="_blank">view website</a></p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Hevon<i class="fa fa-times right"></i></span>
-                <p>I was working for company Hevon. Creating full Front end website,
-                    UI/UX Design using meteor platform & bootstrap.
-                </p>
-            </div>
+            <span class="card-title grey-text text-darken-4">{{title}}<i class="fa fa-times right"></i></span>
+            <p>{{description}}</p>
         </div>
     </div>
     </div>
-    {{>slider}}
-    </template>
-
-
-    <div class="col s12 m6 l4">
-        <div class="card small">
-            <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./img/Portfolio/to. (3).jpg">
-            </div>
-            <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col s12 m6 l4">
-        <div class="card small">
-            <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./img/Portfolio/to. (4).jpg">
-            </div>
-            <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col s12 m6 l4">
-        <div class="card small">
-            <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./img/Portfolio/to. (9).jpg">
-            </div>
-            <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col s12 m6 l4">
-        <div class="card small">
-            <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./img/Portfolio/to. (5).jpg">
-            </div>
-            <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col s12 m6 l4">
-        <div class="card small">
-            <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./img/Portfolio/to. (6).jpg">
-            </div>
-            <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col s12 m6 l4">
-        <div class="card small">
-            <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./img/Portfolio/to. (7).jpg">
-            </div>
-            <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col s12 m6 l4">
-        <div class="card small">
-            <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./img/Portfolio/to. (1).jpg">
-            </div>
-            <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col s12 m6 l4">
-        <div class="card small">
-            <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./img/Portfolio/to. (2).jpg">
-            </div>
-            <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-        </div>
-    </div>
-
-</div>
 </template>
-    <img class="materialboxed col l4 m4 s12"  src="./img/Portfolio/to. (8).jpg">
-    <img class="materialboxed col l3 m3 s12" src="./img/Portfolio/to. (3).jpg">
-    <img class="materialboxed col l5 m5 s12" src="./img/Portfolio/to. (4).jpg">
-</div>
-<div class="row">
-    <img class="materialboxed col l5 m5 s12"  src="./img/Portfolio/to (9).jpg">
-    <img class="materialboxed col l4 m4 s12"  src="./img/Portfolio/to. (5).jpg">
-    <img class="materialboxed col l3 m3 s12" src="./img/Portfolio/to. (6).jpg">
 
-</div>
-    <div class="row">
-    <img class="materialboxed col l4 m5 s12"  src="./img/Portfolio/to. (7).jpg">
-    <img class="materialboxed col l4 m4 s12"  src="./img/Portfolio/to. (1).jpg">
-    <img class="materialboxed col l4 m3 s12"  src="./img/Portfolio/to. (2).jpg">
-
-</div>
-    <!-- thumbnail image wrapped in a link
-    <a href="#img1">
-        <img src="/img/Portfolio/to (9)small.jpg">
-    </a>
-
-    <!-- lightbox container hidden with CSS
-    <a href="#_" class="lightbox" id="img1">
-        <img src="/img/Portfolio/to (9).jpg">
-    </a>
-    <a href="./img/Portfolio/to (9).jpg" class="fancybox" rel="gallery" title="Sample title 1">
-        <img src="./img/Portfolio/to (9)small.jpg"/></a>
-    <a href="./img/Portfolio/to (10).jpg" class="fancybox" rel="gallery" title="Sample title 1">
-        <img src="./img/Portfolio/to (10)small.jpg" /></a>
-    <a href="" class="fancybox" rel="gallery" title="Sample title 1">
-        <img src="" /></a>-->
+<!--<h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>-->
