@@ -32,7 +32,7 @@ main {
 }
 
 .vizitka {
-    background-image: url("../../public/img/Logo/BUSINESScard2.png");
+    background-image: url("./img/Logo/BUSINESScard2.png");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 390px;
@@ -62,7 +62,7 @@ footer.page-footer {
 }
 @font-face {
     font-family: "Acto-UltraLight";
-    src: url("../../public/Fonts/Acto/Acto-UltraLight.otf");
+    src: url("./Fonts/Acto/Acto-UltraLight.otf");
 }
 
 a {
@@ -100,7 +100,7 @@ padding: 0;
 }*/
 
 .brand-logo {
-    background-image: url("../../public/img/Logo/logicko.png");
+    background-image: url("./img/Logo/logicko.png");
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -136,21 +136,21 @@ fieldset {
  }
 
 .one {
-    background-image: url("../../public/img/others/google-material-design.gif");
+    background-image: url("./img/others/google-material-design.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .three {
-    background-image: url("../../public/img/me/a%20(13)black.jpg");
+    background-image: url("./img/me/a%20(13)black.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .four {
-    background-image: url("../../public/img/keynote_animation_material_design.gif");
+    background-image: url("./img/keynote_animation_material_design.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -502,7 +502,7 @@ div#fall-container {
     position : fixed ;
     bottom : 35px;
     right : 20px ;
-    background-image: url("../../public/img/bo.png");
+    background-image: url("./img/bo.png");
     background-size: contain;
     background: #00838f;
     padding : 3px 5px;
