@@ -10,7 +10,6 @@ boilerplate-generator@1.0.3
 bredikhin:contact-form@1.0.0
 callback-hook@1.0.3
 check@1.0.5
-chriswessels:hammer@4.0.2
 coffeescript@1.0.6
 ddp@1.1.0
 deps@1.0.7
@@ -35,7 +34,6 @@ iron:url@1.0.9
 joshowens:shareit@0.3.1
 jquery@1.11.3_2
 json@1.0.3
-krstffr:slidr@1.1.2
 launch-screen@1.0.2
 less@1.0.14
 livedata@1.0.13
@@ -51,7 +49,6 @@ mongo@1.1.0
 observe-sequence@1.0.6
 ordered-dict@1.0.3
 random@1.0.3
-rcy:nouislider@7.0.7_2
 reactive-dict@1.1.0
 reactive-var@1.0.5
 reload@1.1.3

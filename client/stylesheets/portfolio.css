@@ -9,7 +9,7 @@ p {
 }
 
 .row {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 body {
     display: flex;
@@ -21,21 +21,21 @@ main {
 }
 
 .avatar {
-    background-image: url("/img/to (4).jpg");
+    background-image: url('./img/to%20(4).jpg');
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 300px;
 }
 .card-reveal {
     display: block;
-    transform: translateY(-30%) !important;
+    transform: translateY(-50%) !important;
 }
 
 .vizitka {
-    background-image: url("/img/Logo/BUSINESScard2.png");
+    background-image: url("../../public/img/Logo/BUSINESScard2.png");
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 320px;
+    min-height: 390px;
     -webkit-animation-name: example; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
     -webkit-animation-iteration-count: 1; /* Chrome, Safari, Opera */
@@ -58,11 +58,11 @@ main {
 }
 footer.page-footer {
        background-color: dimgrey;
-        padding-top: 0px;
+        padding-top: 0;
 }
 @font-face {
     font-family: "Acto-UltraLight";
-    src: url("/Fonts/Acto/Acto-UltraLight.otf");
+    src: url("../../public/Fonts/Acto/Acto-UltraLight.otf");
 }
 
 a {
@@ -79,7 +79,7 @@ a:hover, a:active {
 }
 
 .side-nav li {
-padding: 0px;
+padding: 0;
 }
 
 /*share buttons*/
@@ -100,7 +100,7 @@ padding: 0px;
 }*/
 
 .brand-logo {
-    background-image: url("/img/Logo/logo.png");
+    background-image: url("../../public/img/Logo/logicko.png");
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -136,26 +136,25 @@ fieldset {
  }
 
 .one {
-    background-image: url("/img/google-material-design.gif");
+    background-image: url("../../public/img/others/google-material-design.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .three {
-    background-image: url("/img/me/a (13)black.jpg");
+    background-image: url("../../public/img/me/a%20(13)black.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .four {
-    background-image: url("/img/keynote_animation_material_design.gif");
+    background-image: url("../../public/img/keynote_animation_material_design.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-
 
 .lil {
     display: inline-block;
@@ -218,7 +217,7 @@ fieldset {
     height: 41px;
     -webkit-transition: all 0.4s linear;
     -moz-transition: all 0.4s linear;
-    -ms-transition: all 0.4s linear;
+    /*-ms-transition: all 0.4s linear;*/
     transition: all 0.4s linear;
 }
 
@@ -227,7 +226,7 @@ fieldset {
     -webkit-transform: rotate(360deg);
     -moz-transition: all 0.4s linear;
     -moz-transform: rotate(360deg);
-    -ms-transition: all 0.4s linear;
+    /*-ms-transition: all 0.4s linear;*/
     -ms-transform: rotate(360deg);
     transition: all 0.4s linear;
     transform: rotate(360deg);
@@ -242,7 +241,7 @@ fieldset {
     margin-top: 3px;
     -webkit-transition: all 0.4s linear;
     -moz-transition: all 0.4s linear;
-    -ms-transition: all 0.4s linear;
+    /*-ms-transition: all 0.4s linear;*/
     transition: all 0.4s linear;
 }
 
@@ -251,7 +250,7 @@ fieldset {
     -webkit-transform: rotate(-45deg);
     -moz-transition: all 0.4s linear;
     -moz-transform: rotate(-45deg);
-    -ms-transition: all 0.4s linear;
+    /*-ms-transition: all 0.4s linear;*/
     -ms-transform: rotate(-45deg);
     transition: all 0.4s linear;
     transform: rotate(-45deg);
@@ -277,7 +276,7 @@ fieldset {
     margin-top: 10px;
     -webkit-transition: all 0.4s linear;
     -moz-transition: all 0.4s linear;
-    -ms-transition: all 0.4s linear;
+    /*-ms-transition: all 0.4s linear;*/
     transition: all 0.4s linear;
 }
 
@@ -286,7 +285,7 @@ fieldset {
     -webkit-transform: rotate(45deg);
     -moz-transition: all 0.4s linear;
     -moz-transform: rotate(45deg);
-    -ms-transition: all 0.4s linear;
+    /*-ms-transition: all 0.4s linear;*/
     -ms-transform: rotate(45deg);
     transition: all 0.4s linear;
     transform: rotate(45deg);
@@ -298,7 +297,7 @@ fieldset {
 
 #nav-toggle { position: absolute; left: 50%; top: 50%; }
 
-#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0; }
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
     cursor: pointer;
     border-radius: 1px;
@@ -336,7 +335,7 @@ fieldset {
 .chart {
     position: relative;
     display: inline-block;
-    margin: 0px;
+    margin: 0;
     /*color: #999;*/
     font-size: 14px;
     text-align: center;
@@ -485,7 +484,7 @@ div#fall-container {
 
 #leaf6 {
     width: 23%;
-    top: 0px;
+    top: 0;
     left: 55%;
     animation-delay: 3.8s;
 }
@@ -501,14 +500,14 @@ div#fall-container {
 .Top {
     text-align: center;
     position : fixed ;
-    bottom : 20px;
+    bottom : 35px;
     right : 20px ;
-    background-image: url("/img/bo.png");
+    background-image: url("../../public/img/bo.png");
     background-size: contain;
     background: #00838f;
     padding : 3px 5px;
-    width: 55.5px;
-    height: 55.5px;
+    width: 55px;
+    height: 55px;
     box-sizing : border-box ;
     font-size : 30px;
     border-radius : 100% ;
@@ -516,7 +515,7 @@ div#fall-container {
     cursor : pointer ;
     z-index : 10 ;
     display : none;
-    box-shadow: 0px 0px 5px 0px #333;
+    box-shadow: 0 0 5px 0 #333;
 }
 
 /*scroll down*/
@@ -525,7 +524,7 @@ section {
     width: 100%;
     background: #fff;
     position: relative;
-    box-shadow: 0 0 5px 0px #333;
+    box-shadow: 0 0 5px 0 #333;
 }
 /* the important styles */
 
@@ -542,14 +541,14 @@ section {
     border-radius: 50%;
     font-size: 0.3333em;
     display: block;
-    box-shadow: 0px 0px 5px 0px #333;
+    box-shadow: 0 0 5px 0 #333;
 }
 
 .arrow {
     float: left;
     position: relative;
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     border-style: solid;
     border-width: 3em 3em 0 3em;
     border-color: #ffffff transparent transparent transparent;
@@ -561,8 +560,8 @@ section {
     position: absolute;
     top: -3.2em;
     left: -3em;
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     border-style: solid;
     border-width: 3em 3em 0 3em;
     border-color: #00838f transparent transparent transparent;

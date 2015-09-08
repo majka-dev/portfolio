@@ -11,11 +11,9 @@ materialize:materialize
 iron:router
 fortawesome:fontawesome
 jquery
-email
 bredikhin:contact-form
 meteor-platform
 rendro:easy-pie-chart
 sinda:fancybox
 joshowens:shareit
-rcy:nouislider
-krstffr:slidr
+

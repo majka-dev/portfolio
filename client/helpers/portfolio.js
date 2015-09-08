@@ -4,8 +4,8 @@ var postsData = [
         subtitle:'UI/UX Design',
         subtitle2:'(meteor/material design)',
         url: 'http://www.payfacile.com',
-        description:'In my last project, I was working for company PayFacile. Helping with UI/UX,creating LogIn/Register form and CheckOut page in meteor using google material design.',
-        url1: 'https://scontent-ams2-1.xx.fbcdn.net/hphotos-xpf1/t31.0-8/11896466_10204535603571621_241447294604995380_o.jpg',
+        description:'In my last project, I was working for company PayFacile. Helping with UI/UX, creating LogIn Register form and CheckOut page in meteor using google material design.',
+        url1: 'https://scontent-fra3-1.xx.fbcdn.net/hphotos-xpl1/t31.0-8/11950251_10204576236707424_1427299201547722982_o.jpg',
         url2: 'https://scontent-ams2-1.xx.fbcdn.net/hphotos-xtp1/t31.0-8/11147171_10204535607651723_2862706146932860053_o.jpg'
 
     },
@@ -24,7 +24,7 @@ var postsData = [
         subtitle:'Portfolio website',
         subtitle2:'(PHP/Wordpress)',
         url: 'http://localhost:3000/contact',
-        description:'I was working for company PayFacile. Helping with UI/UX,creating LogIn/Register form and CheckOut page in meteor using google material design.',
+        description:'I was working on my own portfolio of my paintings and drawings, using PHP-Wordpress.',
         url1: 'https://scontent-ams2-1.xx.fbcdn.net/hphotos-xpf1/t31.0-8/11952780_10204535599651523_8918647628904204788_o.jpg',
         url2: 'https://scontent-ams2-1.xx.fbcdn.net/hphotos-xlp1/t31.0-8/11942077_10204535600211537_7277515735144147022_o.jpg'
 

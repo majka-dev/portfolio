@@ -3,17 +3,19 @@
     <div class="account panel panel-info">
         <h4>My Portfolio</h4>
         <div id="content blog">
+            <div class="row">
           {{#each posts}}
             {{> postItem}}
           {{/each}}
+           </div>
         </div>
     </div>
         </div>
 </template>
 
 <template name="postItem">
-<div class="col s12 m6 l10 offset-l1" style="margin-bottom: 50px;">
-    <div class="card large">
+<div class="col s12 m6 l4">
+    <div class="card medium">
         <div class="card-image waves-effect waves-block waves-light">
             <div class="slider">
                 <ul class="slides">
@@ -42,4 +44,3 @@
     </div>
 </template>
 
-<!--<h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>-->
