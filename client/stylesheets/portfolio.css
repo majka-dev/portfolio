@@ -405,6 +405,15 @@ fieldset {
     font-size: 20px !important;
 }
 
+/*share icons mobile nav*/
+.bo {
+    display: inline-block !important;
+}
+
+.bob:hover {
+    text-decoration: none !important;
+}
+
 /*Falling polygons*/
 @keyframes sway {
     0% {

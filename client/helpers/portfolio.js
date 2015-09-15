@@ -23,7 +23,7 @@ var postsData = [
         title: "Majka's Art",
         subtitle:'Portfolio website',
         subtitle2:'(PHP/Wordpress)',
-        url: 'http://localhost:3000/contact',
+        url: '',
         description:'I was working on my own portfolio of my paintings and drawings, using PHP-Wordpress.',
         url1: 'https://scontent-ams2-1.xx.fbcdn.net/hphotos-xpf1/t31.0-8/11952780_10204535599651523_8918647628904204788_o.jpg',
         url2: 'https://scontent-ams2-1.xx.fbcdn.net/hphotos-xlp1/t31.0-8/11942077_10204535600211537_7277515735144147022_o.jpg'
