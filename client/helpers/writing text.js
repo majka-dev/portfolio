@@ -1,4 +1,5 @@
 
+/*
 //Writing text
 Template.welcome.onRendered(function () {
     var app;
@@ -26,4 +27,4 @@ Template.welcome.onRendered(function () {
             }
         }
     };
-}.call(this));
+}.call(this));*/

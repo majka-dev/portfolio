@@ -1,14 +1,14 @@
-Template.aboutme.onRendered(function() {
+/*Template.aboutme.onRendered(function() {
     $(".two").animate({
-        left: '330px'
-    }, 1000);
+        left: '30%'
+    }, 2000);
     $(".three").animate({
-        right: '550px'
-    }, 1000);
+        right: '50%'
+    }, 2000);
     $(".four").animate({
-        left: '630px'
-    }, 1000);
+        left: '60%'
+    }, 2000);
     $(".five").animate({
-        right: '250px'
-    }, 1000);
-});
+        right: '25%'
+    }, 2000);
+});*/

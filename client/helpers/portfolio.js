@@ -4,7 +4,7 @@ var postsData = [
         subtitle:'UI/UX Design',
         subtitle2:'(meteor/material design)',
         url: 'http://www.payfacile.com',
-        description:'In my last project, I was working for company PayFacile. Helping with UI/UX, creating LogIn Register form and CheckOut page in meteor using google material design.',
+        description:'In my last project, I was working for company PayFacile. Helping with UI/UX, creating LogIn Register form and CheckOut page in meteor using material design.',
         url1: 'https://scontent-fra3-1.xx.fbcdn.net/hphotos-xpl1/t31.0-8/11950251_10204576236707424_1427299201547722982_o.jpg',
         url2: 'https://scontent-ams2-1.xx.fbcdn.net/hphotos-xtp1/t31.0-8/11147171_10204535607651723_2862706146932860053_o.jpg'
 
